@@ -1,0 +1,27 @@
+:root {
+	--blueFont: #65d8fc;
+	--blueBackground: #65d8fc;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 3rem;
+	background: var(--blueBackground);
+}
+
+.headerIcon {
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+	box-shadow: none;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+.navbar img {
+	width: 25px;
+	height: 25px;
+	align-items: center;
+	justify-content: center;
+}
