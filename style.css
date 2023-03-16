@@ -2,20 +2,27 @@
 	--blueFont: #65d8fc;
 	--blueBackground: #65d8fc;
 	--blackBackground: rgba(0, 0, 0, 0.817);
-}
-
-html {
-	background: var(--blackBackground);
-}
-
-header {
-	position: sticky;
-	top: 10px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
-	padding: 1rem;
-	background: var(--blueBackground);
+	position: sticky;
+	top: 0px;
+}
+
+.navbar {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	padding: 24px 48px;
+	background: rgb(0, 212, 255);
+	background: rgb(0, 212, 255);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 212, 255, 1) 0%,
+		rgba(60, 108, 134, 1) 43%,
+		rgba(0, 0, 0, 1) 72%
+	);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -23,10 +30,11 @@ header {
 }
 
 .headerIcon {
-	background-color: var(--blueBackground);
+	background-color: rgb(0, 0, 0);
 	padding: 0;
 	border: none;
 	cursor: pointer;
+	border-radius: 8px;
 }
 
 .navbar img {
@@ -35,15 +43,50 @@ header {
 	height: 25px;
 }
 
-.entryTitle {
+.blue {
 	background-color: var(--blueBackground);
 }
 
-/* {
-	display: flex;
-	justify-content: center;
-	align
-} */
+.black {
+	background: var(--blackBackground);
+}
+
+.container {
+	margin: 0px 91.5px;
+	padding: 128px 24px;
+}
+
+.entryTitle {
+	margin: 0px 208px 0px 0px;
+	color: white;
+}
+
+.entryTitle h2 {
+	font-size: 72px;
+	font-weight: bolder;
+	margin: 0px 0px 16px;
+}
+
+.entryTitle p {
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contactUsTop {
+	margin: 32px 0px 0px;
+	padding: 12px 16px;
+	background-color: #9d9fa3;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
 
 .title {
 	font: 32px;
@@ -53,15 +96,11 @@ header {
 }
 
 .information {
-	padding: 0 5rem 5rem;
+	/* padding: 0 5rem 5rem; */
 }
 
 .aboutUs {
 	color: var(--blueFont);
-}
-
-.services {
-	background: var(--blueBackground);
 }
 
 .reviews {
@@ -89,8 +128,22 @@ header {
 form {
 	display: flex;
 	flex-direction: column;
+	color: var(--blueFont);
 }
 
 form input {
 	width: 25%;
+}
+
+/* footer styling */
+footer {
+	background: #aa9b9b;
+	text-align: left;
+	margin: 0;
+	padding-left: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
