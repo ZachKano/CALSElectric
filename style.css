@@ -2,7 +2,6 @@
 	--blueFont: #65d8fc;
 	--blueBackground: #65d8fc;
 	--blackBackground: rgba(0, 0, 0, 0.817);
-
 }
 
 html {
@@ -28,7 +27,6 @@ header {
 	padding: 0;
 	border: none;
 	cursor: pointer;
-
 }
 
 .navbar img {
@@ -41,11 +39,11 @@ header {
 	background-color: var(--blueBackground);
 }
 
- {
+/* {
 	display: flex;
 	justify-content: center;
 	align
-}
+} */
 
 .title {
 	font: 32px;
