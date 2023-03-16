@@ -1,27 +1,98 @@
 :root {
 	--blueFont: #65d8fc;
 	--blueBackground: #65d8fc;
+	--blackBackground: rgba(0, 0, 0, 0.817);
+
+}
+
+html {
+	background: var(--blackBackground);
+}
+
+header {
+	position: sticky;
+	top: 10px;
 }
 
 .navbar {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 3rem;
+	padding: 1rem;
 	background: var(--blueBackground);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .headerIcon {
-	background-color: #fff;
+	background-color: var(--blueBackground);
+	padding: 0;
 	border: none;
 	cursor: pointer;
-	box-shadow: none;
-	display: inline-flex;
-	justify-content: flex-end;
+
 }
 
 .navbar img {
+	padding: 0.5rem;
 	width: 25px;
 	height: 25px;
-	align-items: center;
+}
+
+.entryTitle {
+	background-color: var(--blueBackground);
+}
+
+ {
+	display: flex;
 	justify-content: center;
+	align
+}
+
+.title {
+	font: 32px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 3rem 3rem 1.5rem;
+}
+
+.information {
+	padding: 0 5rem 5rem;
+}
+
+.aboutUs {
+	color: var(--blueFont);
+}
+
+.services {
+	background: var(--blueBackground);
+}
+
+.reviews {
+	color: var(--blueFont);
+}
+
+.photos {
+	background: var(--blueBackground);
+	padding: 3rem;
+}
+
+.photos img {
+	width: 50px;
+	height: 50px;
+}
+
+.contactForm {
+	color: var(--blueFont);
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	gap: 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form input {
+	width: 25%;
 }
